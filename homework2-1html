@@ -13,9 +13,9 @@
 
 <h1>목록</h1>
 <ul>
-    <li>html</li>
-    <li>css</li>
-    <li>sql</li>
+    <li>HTML</li>
+    <li><a href=https://namu.wiki/w/CSS>CSS</a></li>
+    <li>SQL</li>
   </ul>  
   
 </body>
