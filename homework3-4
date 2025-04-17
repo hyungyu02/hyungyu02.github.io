@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+ 
+<form method="GET" action="formcgi.php">
+width : <input type="number" name="width"><br>
+height : <input type="number" name="height"><br>
+length : <input type="number" name="length"><br>
+radius : <input type="number" name="radius"><br>
+<input type="submit" value="전송">
+</form>
+ 
+</body>
+<?php
+$width = $_GET["width"];
+$height = $_GET["height"];
+$length = $_GET["length"];
+$radius = $_GET["radius"];
+$triangle = $width*$height/2;
+$sq = $width*$height;
+$ci = 3.14*$radius*2;
+$sq2 = $width*$height*$length;
+$ci2 = $ci*$height;
+$ci3 = 4/3*3.14*$radius*$radius*$radius;
+echo("삼각형 : $triangle");
+echo("직사각형 : $sq");
+echo("원 : $ci");
+echo("직육면체 : $sq2");
+echo("원통 : $ci2");
+echo("구 : $ci3");
+?>
